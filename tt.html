@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .container {
+      /* border: 2px solid red; */
+      color: white;
+      border: none;
+      /* position: fixed; */
+      position: absolute;
+      right: 0px;
+      margin: 1rem 4rem;
+      width: 45%;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      background-color: violet;
+  }
+  
+  .data{
+    /* border: 2px solid green; */
+    border: none;
+      width: 99%;
+      padding: 7px;
+      border-radius: 5px;
+      resize: vertical;
+      margin: 10px 0;
+      font-size: 20px;
+  }
+  
+  .data-name{
+    /* border: 2px solid green; */
+    border: none;
+      width: 46%;
+      padding: 7px;
+      border-radius: 5px;
+      resize: vertical;
+      margin: 10px 3px;
+      font-size: 20px;
+      margin-right: 18px;
+  }
+  
+  h3 {
+    color: midnightblue;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: bold;
+  }
+  
+  .btn-group{
+    margin-left: 6rem;
+  }
+  
+  .btn{
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 4px;
+      background-color: blue;
+      width: 135px;
+      height: 45px
+  }
+  
+  .btn-group>.btn{
+    margin: 0 2rem;
+  }
+  
+  .btn:hover{
+      background-color: purple;
+      color: white;
+  }
+  
+  label{
+    font-size: 22px;
+    margin: 0 1rem 0 5rem;
+  }
+
+  .container p{
+    color: black;
+    font-size: 17px;
+  }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Enquiry Form</h3>
+    <p>Simply fill the form below and one of our team will get back to you.</p>
+    <form action="" method="get">
+      <input type="text" name="UserName" placeholder="First Name" class="data-name" required>
+      <input type="text" name="UserName" placeholder="Last Name" class="data-name"> <br>
+      <input type="text" name="UserMobileNo" placeholder="Mobile No" class="data" required> <br>
+      <input type="email" name="UserEmailID" placeholder="Your Email" class="data" required> <br>
+      <input type="text" name="mycountry" class="data" placeholder="Your Country" required> <br>
+      <textarea name="text" cols="30" rows="5" placeholder="Leave Message here" class="data"></textarea> <br>
+      <div class="btn-group">
+        <button class="btn" onclick="showAlert()">Submit</button>
+        <input type="reset" value="Clear" class="btn">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function showAlert() {
+      alert ("Hello world!");
+    }
+    </script>
+</body>
+</html>
